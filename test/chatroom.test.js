@@ -12,11 +12,14 @@ describe('Chatroom', () => {
     //expect client.username is defined
     expect(client.username).toBeDefined();
   });
-  // it('get client', () => {
-  //   const client = {};
-  //   chatRoom.get(client);
-  //   expect(client.username).toBeDefined();
-  // });
+  it('gets client', () => {
+    const client = {};
+    chatRoom.add(client);
+    const foundClient = chatRoom.getClient(client.username);
+    expect(foundClient.username).toEqual(client.username);
+    
+  });
+
   it('rename new user', () => {
     const client = {};
     chatRoom.add(client);
