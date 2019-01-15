@@ -1,11 +1,11 @@
 {
   "name": "tcp-server",
   "version": "1.0.0",
-  "description": "",
   "main": "readStream.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,10 @@
   "dependencies": {
     "chance": "^1.0.18",
     "shortid": "^2.2.14"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "description": ""
 }
